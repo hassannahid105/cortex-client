@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "name": "Apple",
     "img": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
     "images": [
@@ -10,7 +9,6 @@
     ]
   },
   {
-    "id": 2,
     "name": "Samsung",
     "img": "https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg",
     "images": [
@@ -20,7 +18,6 @@
     ]
   },
   {
-    "id": 3,
     "name": "Facebook",
     "img": "https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg",
     "images": [
@@ -30,7 +27,6 @@
     ]
   },
   {
-    "id": 4,
     "name": "Google",
     "img": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
     "images": [
@@ -40,7 +36,6 @@
     ]
   },
   {
-    "id": 5,
     "name": "Intel",
     "img": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Intel_logo_%282006-2020%29.svg",
     "images": [
@@ -50,7 +45,6 @@
     ]
   },
   {
-    "id": 6,
     "name": "Microsoft",
     "img": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
     "images": [
