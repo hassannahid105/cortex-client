@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "cortex-f3b05",
+    "`cortex`": "cortex-new"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
