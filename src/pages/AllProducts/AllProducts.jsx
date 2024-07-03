@@ -5,18 +5,14 @@ import { useLoaderData } from "react-router-dom";
 import Slider from "../../component/Slider/Slider";
 import ProductCard from "../../component/ProductCard/ProductCard";
 import { useEffect, useState } from "react";
-
 const AllProducts = () => {
   const products = useLoaderData();
   return (
     <div>
       {/* See Our Resent Product */}
-      <div className="carousel w-full">
+      <div className="carousel w-full max-h-[70vh]">
         <div id="slide1" className="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
-            className="w-full"
-          />
+          <img src={"https://i.ibb.co/86bx40f/prev.jpg"} className="w-full" />
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide4" className="btn btn-circle">
               ❮
@@ -28,7 +24,7 @@ const AllProducts = () => {
         </div>
         <div id="slide2" className="carousel-item relative w-full">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+            src={"https://i.ibb.co/TwJ7XYq/2769544-1.jpg"}
             className="w-full"
           />
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -42,7 +38,7 @@ const AllProducts = () => {
         </div>
         <div id="slide3" className="carousel-item relative w-full">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+            src={"https://i.ibb.co/4fV25pj/2947115.jpg"}
             className="w-full"
           />
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">

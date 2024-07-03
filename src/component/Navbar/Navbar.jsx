@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
 
 const Navbar = () => {
-  const { logOut, myUser } = useContext(AuthContext);
+  const { logOut, myUser, setMyUser } = useContext(AuthContext);
   const navItem = (
     <>
       <li>
@@ -19,7 +19,9 @@ const Navbar = () => {
   );
   const handlelLogOut = () => {
     logOut()
-      .then(() => {})
+      .then(() => {
+        setMyUser(null);
+      })
       .catch((error) => {
         console.log(error);
       });
@@ -62,17 +64,9 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navItem}</ul>
         </div>
         <div className="navbar-end">
-          {!myUser ? (
-            <div>
-              <Link
-                to="/login"
-                className="text-xl font-semibold bg-blue-400 px-4 py-3 text-white rounded-lg"
-              >
-                Log In
-              </Link>
-            </div>
-          ) : (
+          {myUser?.email ? (
             <div className="flex items-center justify-center gap-4">
+              <p>{myUser?.displayName || ""}</p>
               <div className="avatar w-12">
                 <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
                   <img src={myUser?.photoURL} />
@@ -84,6 +78,15 @@ const Navbar = () => {
               >
                 logOut
               </button>
+            </div>
+          ) : (
+            <div>
+              <Link
+                to="/login"
+                className="text-xl font-semibold bg-blue-400 px-4 py-3 text-white rounded-lg"
+              >
+                Log In
+              </Link>
             </div>
           )}
         </div>
